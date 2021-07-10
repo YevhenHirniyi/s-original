@@ -1,0 +1,330 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+    max-width: 1500px;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__menu-list {
+        display: flex;
+        align-items: center;
+    }
+    &__menu-item {
+        max-height: 80px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+    }
+    &__btn-text {
+        margin-left: 11px;
+        color: #717171;
+        margin-right: 70px;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+    }
+    &__search-text {
+        margin-left: 11px;
+        color: #717171;
+    }
+    &__logo {
+        margin: 0 auto;
+    }
+    &__menu-phone {
+        @extend %gilroy700;
+        font-size: 16px;
+        color: #282828;
+        margin-right: 72px;
+    }
+    &__profile {
+        margin-right: 70px;
+    }
+}
+.slider {
+    margin-top: 30px;
+    margin-bottom: 181px;
+    &__item {
+        display: flex !important;
+        justify-content: center;
+    }
+    &__title {
+        width: 446px;
+        height: 131px;
+        color: #282828;
+        font-size: 70px;
+        margin-top: 96px;
+        line-height: 70px;
+        padding-left: 70px;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-left: 70px;
+        background: transparent;
+        cursor: pointer;
+        min-height: 58px;
+        width: 223px;
+        border: 2px solid #282828;
+        font-size: 18px;
+        line-height: 70px;
+    }
+    &__btn-arrow {
+        padding-left: 18px;
+    }
+    &__img {
+        z-index: -1;
+    }
+}
+//slider
+.container-arrow {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.arrow--flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.arrow--flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+.arrow-right {
+    position: absolute;
+    z-index: 10;
+    bottom: 2%;
+    font-size: 15px;
+    @extend %gilroy500;
+    max-width: 59px;
+    display: flex;
+    margin-right: -90px;
+}
+.arrow-right--text {
+    margin-right: 15px;
+}
+.arrow-left {
+    position: absolute;
+
+    bottom: 3.5%;
+}
+
+.attention {
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        opacity: 0.2;
+        color: #282828;
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 80px;
+    }
+    &__product-1 {
+        display: flex;
+        margin-bottom: 217px;
+    }
+    &__product-2 {
+        margin-bottom: 75px;
+    }
+}
+.breadcrumbs-1 {
+    max-width: 45px;
+    margin-top: 43px;
+    margin-bottom: 29px;
+}
+.product {
+    &__inner {
+        display: flex;
+        margin-top: 34px;
+    }
+    &__inner-1 {
+        flex-direction: column;
+        margin-left: 28px;
+    }
+    &__filling-1 {
+        max-width: 178px;
+    }
+    &__title {
+        font-size: 20px;
+        @extend %gilroy700;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    &__price {
+        margin-top: 18px;
+        font-size: 16px;
+        @extend %gilroy700;
+    }
+    &__price-3 {
+        display: flex;
+    }
+    &__price--old {
+        font-size: 14px;
+        color: #a4a4a4;
+        text-decoration: line-through;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+}
+.category {
+    margin-top: 163px;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 29px;
+        margin-bottom: 250px;
+    }
+    &__women,
+    &__man,
+    &__accessories {
+        width: 350px;
+        height: 416px;
+        font-size: 18px;
+        @extend %gilroy700;
+        color: #fff;
+        padding-left: 30px;
+        padding-top: 360px;
+        cursor: pointer;
+    }
+    &__women {
+        background-image: url(../images/category-women.jpg);
+    }
+    &__man {
+        background-image: url(../images/category-man.jpg);
+    }
+    &__accessories {
+        background-image: url(../images/category-accessories.jpg);
+    }
+    &__bg {
+        position: absolute;
+        margin-top: 59px;
+        z-index: -1;
+        background-color: #f1f1f1;
+        height: 465px;
+        width: 100%;
+    }
+}
+.new-publications {
+    margin-bottom: 110px;
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__titles {
+        display: flex;
+        align-items: center;
+        margin-bottom: 79px;
+    }
+    &__title {
+        margin-right: 57px;
+        font-size: 30px;
+        @extend %gilroy700;
+    }
+    &__text-1,
+    &__text-2 {
+        font-size: 15px;
+    }
+    &__text-1 {
+        max-width: 408px;
+        margin-bottom: 26px;
+    }
+    &__text-2 {
+        max-width: 478px;
+        margin-top: 29px;
+    }
+}
+.breadcrumbs-publication {
+    display: flex;
+    align-items: center;
+    background: none;
+}
+.breadcrumbs__item {
+    margin-right: 10px;
+    color: #717171;
+}
+.revised {
+    background-color: #f1f1f1;
+    &__title {
+        padding-top: 110px;
+        font-size: 30px;
+        @extend %gilroy700;
+        margin-bottom: 61px;
+    }
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 28px;
+        padding-bottom: 116px;
+    }
+    &__product-title {
+        margin-top: 29px;
+        font-size: 20px;
+        @extend %gilroy700;
+        margin-bottom: 15px;
+    }
+    &__product-text {
+        max-width: 173px;
+        margin-bottom: 18px;
+    }
+    &__price {
+        margin-top: 18px;
+        font-size: 16px;
+        @extend %gilroy700;
+    }
+}
+.footer {
+    font-size: 14px;
+    &__content {
+        display: flex;
+        margin-top: 52px;
+    }
+    &__item {
+        margin-right: 120px;
+    }
+    &__title {
+        color: #282828;
+        @extend %gilroy700;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+    }
+    &__menu {        
+        min-width: 167px;
+    }
+    &__menu-item {
+        margin-bottom: 20px;
+    }
+    &__menu-link{
+        color: #717171;
+    }
+    &__copyright{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 34px;
+    }
+    &__logo{
+        margin-right: 6px;
+    }
+    &__wrapper{
+        margin-top: 33px;
+        display: flex;
+        align-items: flex-end;
+    }
+}

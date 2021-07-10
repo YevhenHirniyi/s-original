@@ -1,0 +1,35 @@
+html,
+body {
+	height: 100%;
+	font-size: 13px;
+	font-family: Gilroy;
+	color: #282828;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@extend %gilroy400;
+}
+.breadcrumbs{
+	cursor: pointer;
+	border: none;
+	background-color: #e6e6e6;
+	height: 20px;
+	margin-right: 23px;
+	
+}
