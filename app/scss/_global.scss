@@ -2,7 +2,7 @@ html,
 body {
 	height: 100%;
 	font-size: 13px;
-	font-family: Gilroy;
+	@extend %gilroy400;
 	color: #282828;
 }
 
@@ -23,7 +23,6 @@ body {
 	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 15px;
-	@extend %gilroy400;
 }
 .breadcrumbs{
 	cursor: pointer;

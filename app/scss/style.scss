@@ -121,7 +121,7 @@
 .arrow-left {
     position: absolute;
 
-    bottom: 3.5%;
+    bottom: 4.1%;
 }
 
 .attention {
@@ -136,12 +136,16 @@
         line-height: 70px;
         margin-bottom: 80px;
     }
+    &__product{
+        color: #282828;
+    }
     &__product-1 {
         display: flex;
         margin-bottom: 217px;
+        
     }
-    &__product-2 {
-        margin-bottom: 75px;
+    &__product-img-4 {
+        margin-top: 75px;
     }
 }
 .breadcrumbs-1 {
@@ -194,7 +198,7 @@
     &__women,
     &__man,
     &__accessories {
-        width: 350px;
+        max-width: 350px;
         height: 416px;
         font-size: 18px;
         @extend %gilroy700;
@@ -223,6 +227,7 @@
 }
 .new-publications {
     margin-bottom: 110px;
+    
     &__columns {
         display: flex;
         justify-content: space-between;
@@ -240,6 +245,7 @@
     &__text-1,
     &__text-2 {
         font-size: 15px;
+        color: #282828;
     }
     &__text-1 {
         max-width: 408px;
@@ -272,6 +278,9 @@
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 28px;
         padding-bottom: 116px;
+    }
+    &__product{
+        color: #282828;
     }
     &__product-title {
         margin-top: 29px;
@@ -328,3 +337,7 @@
         align-items: flex-end;
     }
 }
+
+
+
+@import "media";
